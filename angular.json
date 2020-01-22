@@ -25,7 +25,10 @@
               "apps/mean-post/src/favicon.ico",
               "apps/mean-post/src/assets"
             ],
-            "styles": ["apps/mean-post/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/mean-post/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -84,7 +87,10 @@
               "apps/mean-post/tsconfig.app.json",
               "apps/mean-post/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/mean-post/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/mean-post/**"
+            ]
           }
         },
         "test": {
@@ -118,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/mean-post-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/mean-post-e2e/**"]
+            "tsConfig": [
+              "apps/mean-post-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/mean-post-e2e/**"
+            ]
           }
         }
       }
