@@ -1,3 +1,4 @@
+import { IPost } from './posts/post.interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mean-post';
+  posts: IPost[] = [];
+
+  onPostAdded(post: IPost) {
+    this.posts.push(post);
+  }
 }
