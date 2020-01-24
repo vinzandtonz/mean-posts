@@ -16,7 +16,12 @@
     },
     "mean-post-e2e": {
       "tags": [],
-      "implicitDependencies": ["mean-post"]
+      "implicitDependencies": [
+        "mean-post"
+      ]
+    },
+    "backend": {
+      "tags": []
     }
   }
 }
